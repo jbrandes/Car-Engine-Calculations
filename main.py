@@ -38,5 +38,3 @@ if horsepower > 300:
 else:
     print("You should look into a faster car.")
     
-
-    
