@@ -1,6 +1,6 @@
 class Engine:
     
-    def __init__(self, torque, rpm, horsepower, cylinders, displacement, bore, stroke, fuel_injector_size, tire_size, wheel_axle_ratio, gear_ratio):
+    def __init__(self, torque, rpm, horsepower, cylinders, displacement, bore, stroke, fuel_injector_size, tire_size, wheel_axle_ratio, gear_ratio, year, make, model):
         
         self.torque = int(torque)
         self.rpm = int(rpm)
@@ -8,6 +8,13 @@ class Engine:
         
         
 print("Let's see how your car is running. Tell me about your car.")
+year = int(input("How year did you get your car? "))
+make = input("What make is it? ")
+model = input("What model? ")
+
+if year < 2010:
+    print("Your car is getting pretty old.")
+
 torque = int(input("What is your torque? "))
 rpm = int(input("What is your car's RPM? "))
 cylinders = int(input("how many cylinders do you have? "))
@@ -30,4 +37,6 @@ if horsepower > 300:
     print("I don't know if that's steet legal")
 else:
     print("You should look into a faster car.")
+    
+
     
