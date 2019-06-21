@@ -8,7 +8,7 @@ class Engine:
         
         
 print("Let's see how your car is running. Tell me about your car.")
-year = int(input("How year did you get your car? "))
+year = int(input("What year did you get your car? "))
 make = input("What make is it? ")
 model = input("What model? ")
 
